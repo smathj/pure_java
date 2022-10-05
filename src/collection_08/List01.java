@@ -9,6 +9,16 @@ import java.util.List;
 public class List01 {
     public static void main(String[] args) {
 
+        /**
+         * ! [주의]
+         * List<A> A에는 int 불가능 Integer 같이 Wrapper 클래스나 일반 객체들이 들어올 수 있다 ( 즉, 기본 타입이 불가능하다 )
+         * List<int> (x)
+         * List<Integer> (o)
+         *
+         * ex> Integer, String, Long, Double, Float,
+         *     BoardDto, Bag, ....
+         */
+
         // * 1. or 2. 를 주석하여 결과 확인
 
         // 1. List 사용
