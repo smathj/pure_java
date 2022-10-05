@@ -1,4 +1,4 @@
-package oop_extends;
+package oop_extends_05;
 
 public class SmartPhone {
 

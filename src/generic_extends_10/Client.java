@@ -1,4 +1,4 @@
-package generic_extends;
+package generic_extends_10;
 
 public class Client {
     public static void main(String[] args) {

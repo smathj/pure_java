@@ -1,4 +1,4 @@
-package oop_interface;
+package oop_interface_06;
 
 public class JindoDog implements Dog {
 

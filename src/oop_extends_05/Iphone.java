@@ -1,16 +1,16 @@
-package oop_extends;
+package oop_extends_05;
 
-public class Galaxy extends SmartPhone {
+public class Iphone extends SmartPhone {
 
-    // 자식 클래스인 Galaxy 만의 메서드 ( 부모꺼를 수정도 할 수 있다 )
+    // 자식 클래스인 Iphone 만의 메서드 ( 부모꺼를 수정도 할 수 있다 )
     public void isMe() {
-        System.out.println("저는 갤럭시폰 입니다");
+        System.out.println("저는 아이폰 입니다");
     }
 
     // 부모꺼 수정
     @Override
     public void usbType() {
-        System.out.println("충전기 타입 C");
+        System.out.println("충전기 타입 8핀");
     }
 
     @Override
@@ -27,6 +27,4 @@ public class Galaxy extends SmartPhone {
     public void doKakao() {
         super.doKakao();
     }
-
-
 }

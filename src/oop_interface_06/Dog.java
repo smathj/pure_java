@@ -1,4 +1,4 @@
-package oop_interface;
+package oop_interface_06;
 
 // * 강아지과 동물을 명시한 인터페이스
 // ! 인터페이스로는 인스턴스 ( new Dog() 불가능 ) 반드시 누군가 이어서 완성 시켜야한다 ( 중요함 )

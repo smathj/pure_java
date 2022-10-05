@@ -1,4 +1,4 @@
-package oop_extends;
+package oop_extends_05;
 
 public class Client {
     public static void main(String[] args) {

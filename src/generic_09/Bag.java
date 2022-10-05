@@ -1,4 +1,4 @@
-package generic;
+package generic_09;
 
 // * 가방에는 두개의 물건을 담을 수 있다는 설정
 public class Bag<T,N> {

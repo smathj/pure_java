@@ -1,4 +1,4 @@
-package generic_extends;
+package generic_extends_10;
 
 // * Book 클래스의 메서드는 그대로 다 쓸 수 있다, 필요에 따라서 오버라이딩을 통해 수정하자
 public class JavaBook extends Book {

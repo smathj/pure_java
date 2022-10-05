@@ -1,4 +1,4 @@
-package generic;
+package generic_09;
 
 public class Client01 {
     public static void main(String[] args) {

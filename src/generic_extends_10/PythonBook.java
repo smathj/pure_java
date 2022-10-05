@@ -1,4 +1,4 @@
-package generic_extends;
+package generic_extends_10;
 
 public class PythonBook extends Book {
     private String firstCode;

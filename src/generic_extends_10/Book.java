@@ -1,4 +1,4 @@
-package generic_extends;
+package generic_extends_10;
 
 // * 책 ( 제목, 저자 )
 public class Book {

@@ -1,4 +1,4 @@
-package generic_extends;
+package generic_extends_10;
 
 // * 가방에는 한개의 책종류만 담을 수 있는 가방 ( 책이기만하면 어떤 책이든 상관없음 )
 public class Bag<T extends Book> {

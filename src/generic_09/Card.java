@@ -1,4 +1,4 @@
-package generic;
+package generic_09;
 
 // * 카드  (카드이름, 타입 (신용카드, 체크카드))
 public class Card {

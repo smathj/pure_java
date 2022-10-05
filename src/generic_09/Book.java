@@ -1,4 +1,4 @@
-package generic;
+package generic_09;
 
 // * 책 ( 제목, 저자 )
 public class Book {

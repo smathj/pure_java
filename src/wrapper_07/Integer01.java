@@ -1,4 +1,4 @@
-package wrapper;
+package wrapper_07;
 
 public class Integer01 {
     public static void main(String[] args) {

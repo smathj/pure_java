@@ -1,6 +1,5 @@
-package collection;
+package collection_08;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

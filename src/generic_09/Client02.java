@@ -1,4 +1,4 @@
-package generic;
+package generic_09;
 
 // Bag<T,N> 의 T,N 자리는 모든타입이 올 수 있다
 public class Client02 {
