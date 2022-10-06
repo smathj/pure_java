@@ -15,7 +15,7 @@ public class String01 {
 
         System.out.println(s1);                     // 안녕하세요
         System.out.println(s2);                     // hi
-        System.out.println(s3);                     // 안녕hi
+        System.out.println(s3);                     // 안녕하세요
         System.out.println(s4[0] + s4[1]);          // HelloWorld
 
 
