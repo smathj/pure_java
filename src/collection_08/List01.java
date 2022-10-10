@@ -22,16 +22,18 @@ public class List01 {
         // * 1. or 2. 를 주석하여 결과 확인
 
         // 1. List 사용
-        List<String> aList = new ArrayList<String>();             // new ArrayList<>()     축약 가능
+//        List<String> aList = new ArrayList<String>();             // new ArrayList<>()     축약 가능
 
         // 2. ArrayList 사용
-//        ArrayList<String> aList = new ArrayList<String>();   // new ArrayList<>()     축약 가능
+        ArrayList<String> aList = new ArrayList<String>();   // new ArrayList<>()     축약 가능
 
 
         aList.add("첫번째");
         aList.add("두번째");
         aList.add("세번째");
         aList.add("첫번째");
+
+
 
 
         System.out.println("aList.get(0) :" + aList.get(0));

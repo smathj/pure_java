@@ -15,7 +15,7 @@ public class StringArray01 {
         strArrSizeFive[2] = "셋";
         strArrSizeFive[3] = "넷";
         strArrSizeFive[4] = "다섯";
-        // strArrSizeFive[0] = "여섯"; // 주석을 풀면 에러 발생
+        // strArrSizeFive[5] = "여섯"; // 주석을 풀면 에러 발생
 
         for (String s : strArrSizeFive) {
             System.out.print(s + "\t");
