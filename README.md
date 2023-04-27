@@ -6,7 +6,7 @@
 
 패키지끝에 달린 번호 01부터 보면됨
 
-string_01 > array_02 > ... 
+sample.string_01 > sample.array_02 > ... 
 
 책이나 강의중 꼭 하나는 사세요 !
 
