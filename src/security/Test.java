@@ -9,16 +9,41 @@ import java.util.Base64;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+
+/**
+ * EncodedKeySpec 의 구현체로
+ * 공개키 : X509EncodedKeySpec
+ * 개인키 : PKCS8EncodedKeySpec
+ */
 public class Test {
 
     public static void main(String[] args) throws Exception{
+
+        String plainText = "이거시 자바다";
+
+        System.out.println("===================================");
+        System.out.println("[암호화 시작] " + plainText);
+        System.out.println("===================================");
+        System.out.println();System.out.println();
+
+
 
         Map<String, Object> keyPair = createKeyPair();
         String publicKey = (String) keyPair.get("publicKey");
         String privateKey = (String) keyPair.get("privateKey");
 
-        String encryptText = encrypt("이거시자바다", publicKey);
-        decrypt(encryptText, privateKey);
+        String encryptText = encrypt(plainText, publicKey);
+        String decryptText = decrypt(encryptText, privateKey);
+
+        System.out.println("encryptText = " + encryptText);
+        System.out.println("decryptText = " + decryptText);
+
+
+        System.out.println();System.out.println();
+        System.out.println("===================================");
+        System.out.println("[암호화 종료]");
+        System.out.println("===================================");
+
 
 
     }
@@ -81,6 +106,7 @@ public class Test {
         KeyFactory keyFactory = KeyFactory.getInstance("RSA");
         byte[] bytePublicKey = Base64.getDecoder().decode(stringPublicKey.getBytes());
 
+
         // 공개키 : X509EncodedKeySpec 사용
         X509EncodedKeySpec publicKeySpec = new X509EncodedKeySpec(bytePublicKey);
         PublicKey publicKey = keyFactory.generatePublic(publicKeySpec);
@@ -89,8 +115,9 @@ public class Test {
         // 암호화 연산 객체 (암호화, 복호화 바이트 생성을 담당한다)
         Cipher cipher = Cipher.getInstance("RSA");
         cipher.init(Cipher.ENCRYPT_MODE, publicKey);
-
         byte[] encryptedBytes = cipher.doFinal(plainText.getBytes());
+
+
         String encrytedText = Base64.getEncoder().encodeToString(encryptedBytes);
 
         return encrytedText;
@@ -119,8 +146,8 @@ public class Test {
         byte[] encryptedBytes = Base64.getDecoder().decode(encryptedText.getBytes());
         byte[] decryptedBytes = cipher.doFinal(encryptedBytes);
 
+
         String decryptedText = new String(decryptedBytes);
-        System.out.println("decryptedText = " + decryptedText);
         return decryptedText;
 
 
@@ -129,8 +156,3 @@ public class Test {
 }
 
 
-/**
- * EncodedKeySpec 의 구현체로
- * 공개키 : X509EncodedKeySpec
- * 개인키 : PKCS8EncodedKeySpec
- */
