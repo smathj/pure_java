@@ -1,25 +1,20 @@
 package study;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+
+import java.io.File;
 
 public class test {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> a = new ArrayList(Arrays.asList(1, 2, 3, 4, 5, 6));
 
-        List<Integer> copyFromA = List.copyOf(a);
-
-
-        a.remove(0);
-
-        System.out.println("a = " + a);
-
-        System.out.println("copyFromA = " + copyFromA);
-
-
+//        File file = new File("\\\\192.168.10.35\\qr");
+        File file = new File("\\qr");
+        if (!file.exists()) {
+            System.out.println("폴더를 생성합니다");
+            boolean mkdirs = file.mkdirs();
+            System.out.println("mkdirs = " + mkdirs);
+        }
 
 
     }
