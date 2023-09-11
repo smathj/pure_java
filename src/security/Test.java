@@ -19,7 +19,7 @@ public class Test {
 
     public static void main(String[] args) throws Exception{
 
-        String plainText = "이거시 자바다";
+        String plainText = "aiicon_garak";
 
         System.out.println("===================================");
         System.out.println("[암호화 시작] " + plainText);
